@@ -23,7 +23,6 @@ env:
 
 
 jobs:
-
   integration:
     uses: ./.github/workflows/python-ci-workflow.yml
     permissions:
@@ -31,7 +30,6 @@ jobs:
       checks: write
       
   build:
-
     needs: [integration]
     
     runs-on: ubuntu-latest
